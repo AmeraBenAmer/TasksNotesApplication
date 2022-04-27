@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/colorNoteSubtitleText"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_2sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitLeTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile App Design"
+            android:textColor="@color/black"
+            style="@style/TextView.12spBold"
+            android:layout_marginVertical="@dimen/_20sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:lines="1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dateTimeOfTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00am - 01:00am"
+            android:textColor="@color/black"
+            style="@style/TextView.10spRegularTextView"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_time_hour"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitLeTask"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:lines="1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/taskProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00am - 01:00am"
+            android:textColor="@color/black"
+            style="@style/TextView.10spRegularTextView"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_time_hour"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitLeTask"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:lines="1"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewStateTask"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

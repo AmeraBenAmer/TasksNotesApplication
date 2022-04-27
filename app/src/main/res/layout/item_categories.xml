@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.engamsba.noteapplication.models.CategoryModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="@{() ->viewModel.onClickItem() "
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/bg_raounded_card">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewIconCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note"
+            app:layout_constraintBottom_toTopOf="@+id/textViewTitlrCategories"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            imageUrl="@{viewModel.imageUrl}"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitlrCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_dummy_name_category"
+            style="@style/TextView.12spBold"
+            settext="@{viewModel.name}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewIconCategories"
+            app:layout_constraintStart_toStartOf="@+id/imageViewIconCategories"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewIconCategories" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

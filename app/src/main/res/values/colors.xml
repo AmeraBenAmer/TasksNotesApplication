@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0E4FF4</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="blue_700">#0D4AE6</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_500">#9F9F9F</color>
+    <color name="pink">#F4DDF3</color>
+    <color name="pink_500">#DC38D4</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_500">#F33C2E</color>
+    <color name="colorPrimary">#292929</color>
+    <color name="colorAccent">#FDBE38</color>
+    <color name="colorWhiteTextColor">#FFFFFF</color>
+    <color name="colorSearchIcon">#DBDBDB</color>
+    <color name="colorTextHint">#7B7B7B</color>
+    <color name="colorQuickActionBackground">#2F2D2E</color>
+    <color name="colorIcons">#4A4A4A</color>
+    <color name="colorTextSubtitle">#CECECE</color>
+    <color name="colorNoteSubtitleText">#FAFAFA</color>
+    <color name="colorMiscellaneousBackground">#1F1F1F</color>
+
+    <color name="colorNoteColorYellow">#FDBE3B</color>
+    <color name="colorNoteColorRed">#FF4842</color>
+    <color name="colorNoteColorPerlple">#3A52FC</color>
+    <color name="colorNoteColorBlueGreen">#009688</color>
+    <color name="colorNoteColorGreen">#20D828</color>
+    <color name="colorDelete">#FF4842</color>
+    <color name="colorSearchBackground">#333333</color>
+    <color name="gray">#A2A2A2</color>
+</resources>

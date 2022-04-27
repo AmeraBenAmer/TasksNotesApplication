@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.NoteFragment"
+        android:label="NoteFragment"
+        tools:layout="@layout/notes_fragment">
+        <action
+            android:id="@+id/action_noteFragment_to_noteDetailsFragment"
+            app:destination="@id/noteDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment"/>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/splash_fargment"/>
+    <fragment
+        android:id="@+id/noteDetailsFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.NoteDetailsFragment"
+        android:label="NoteDetailsFragment"
+        tools:layout="@layout/details_note_fragment">
+        <action
+            android:id="@+id/action_noteDetailsFragment_to_addCategoryDialog"
+            app:destination="@id/addCategoryDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailsFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.TaskDetailsFragment"
+        android:label="TaskDetailsFragment"
+        tools:layout="@layout/details_task_fragment"/>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.TasksFragment"
+        android:label="TasksFragment"
+        tools:layout="@layout/tasks_fragment">
+        <action
+            android:id="@+id/action_tasksFragment_to_taskDetailsFragment"
+            app:destination="@id/taskDetailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.TimerFragment"
+        android:label="TimerFragment"
+        tools:layout="@layout/timer_fragment">
+        <action
+            android:id="@+id/action_timerFragment_to_trimerListFragment"
+            app:destination="@id/trimerListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trimerListFragment"
+        android:name="com.engamsba.noteapplication.ui.screens.TrimerListFragment"
+        android:label="TrimerListFragment"
+        tools:layout="@layout/all_timer_fragment"/>
+    <fragment
+        android:id="@+id/addCategoryDialog"
+        android:name="com.engamsba.noteapplication.ui.screens.AddCategoryDialog"
+        android:label="AddCategoryDialog"
+        tools:layout="@layout/add_categories_dialog"/>
+</navigation>

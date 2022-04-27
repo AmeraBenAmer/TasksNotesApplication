@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolBarNoteDetials"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageBack"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_back"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:contentDescription="@string/app_name"
+                android:text="Add Note"
+                android:paddingVertical="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/scrollViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAddNote"
+            app:layout_constraintTop_toBottomOf="@+id/toolBarNoteDetials">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <View
+                    android:id="@+id/viewSubtitleIndicator"
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:background="@drawable/background_subtitle_indicator"
+                    app:layout_constraintBottom_toBottomOf="@id/textViewNoteTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/textViewNoteTitle" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/textViewNoteTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:background="@null"
+                    android:hint="@string/note_title_hint"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textColor="@color/colorTextSubtitle"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/viewSubtitleIndicator"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/textViewNoteDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/details_type_note_here"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="textMultiLine"
+                    android:minHeight="@dimen/_100sdp"
+                    android:textColor="@color/colorWhiteTextColor"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintTop_toBottomOf="@id/textViewNoteTitle" />
+
+                <ImageView
+                    android:id="@+id/imageRemoveImage"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/background_delete"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_4sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/imageNote"
+                    app:layout_constraintTop_toTopOf="@id/imageNote"
+                    app:tint="@color/colorWhiteTextColor" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewAddCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_add_button"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/dropdownMenuCategories"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewNoteDetails"
+                    app:layout_constraintTop_toTopOf="@+id/dropdownMenuCategories" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dropdownMenuCategories"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:endIconMode="dropdown_menu"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewAddCategory"
+                    app:layout_constraintStart_toStartOf="@+id/textViewNoteDetails"
+                    app:layout_constraintTop_toBottomOf="@id/textViewNoteDetails">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTextViewCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Your category"
+                        android:inputType="text"
+                        android:paddingVertical="@dimen/_12sdp"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/textViewNoteTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textDateTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/colorIcons"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewNoteTitle"
+                    app:layout_constraintStart_toStartOf="@+id/textViewNoteTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewNoteTitle" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewNoteDetails"
+                    app:layout_constraintStart_toStartOf="@+id/textViewNoteDetails"
+                    app:layout_constraintTop_toBottomOf="@id/dropdownMenuCategories">
+
+
+                    <include
+                        android:id="@+id/colorLayoutSelection"
+                        layout="@layout/layout_pallate_color"
+
+                        />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAddNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="Add Note"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/scrollViewMain"
+            app:layout_constraintStart_toStartOf="@+id/scrollViewMain" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

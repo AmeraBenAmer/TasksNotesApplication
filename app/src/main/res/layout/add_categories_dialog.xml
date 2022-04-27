@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:background="@drawable/bg_rounded_layout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:padding="@dimen/_10sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutOfEditTextNameCategory"
+                    style="@style/editTextLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lbl_hint_name_category"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nameCategoryEditText"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:nextFocusDown="@+id/passwordLoginEv" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/textViewConfirm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:background="@drawable/bg_raound_button"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/layoutOfEditTextNameCategory"
+                    app:layout_constraintStart_toStartOf="@+id/layoutOfEditTextNameCategory"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutOfEditTextNameCategory" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_70sdp"-->
+<!--            android:layout_height="@dimen/_70sdp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:background="@drawable/background_circle"-->
+<!--            android:padding="3dp"-->
+<!--            android:src="@drawable/loading_app_logo" />-->
+
+    </RelativeLayout>
+</layout>

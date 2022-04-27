@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoteApplication</string>
+    <string name="lbl_note">ملاحظات</string>
+    <string name="lbl_task">الاهداف</string>
+    <string name="lbl_timer">مؤقت</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_search">Search</string>
+    <string name="lbl_dummy_name_category">Work</string>
+    <string name="lbl_hint_name_category">Name category</string>
+    <string name="lbl_dummy_name_activity">Name Activity</string>
+    <string name="lbl_dummy_date_time_activity">2012-12-12 12:30:00 am</string>
+    <string name="lbl_dummy_duration_activity">10 min</string>
+    <string name="lbl_empty_name">Please should be insert name of category</string>
+    <string name="lbl_save_name">saved successfully</string>
+    <string name="note_title_hint">Note Title</string>
+    <string name="text_pick_color_text">Pick Color</string>
+    <string name="details_type_note_here">Type note here..</string>
+
+</resources>

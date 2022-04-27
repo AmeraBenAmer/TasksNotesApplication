@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/drawable/ic_time_hour.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/layout/details_note_fragment.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/layout/home_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/layout/item_category.xml" value="0.5" />
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/layout/item_recent_task_today.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/HP1/Desktop/NoteApplication/app/src/main/res/layout/layout_pallate_color.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/HP1/Desktop/newfolder/NoteApplication/app/src/main/res/layout/activity_main.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/HP1/Desktop/newfolder/NoteApplication/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
